@@ -6,6 +6,7 @@
       <th> Last Name </th>
       <th> Email</th>
       <th> Birth Date </th>
+      <th> Actions </th>
     </tr>
   </thead>
   <tbody>
@@ -13,7 +14,12 @@
       <td> {{ user.firstName }}</td>
       <td> {{ user.lastName }}</td>
       <td> {{ user.email }}</td>
-      <td> {{ user.birthDate }}</td>
+      <td> {{ user.birthDate | date: 'dd/MM/yyyy' }}</td>
+      <td>
+        <button (click) = "updateUser(user.id)" class="btn btn-info">Update</button>
+        <button (click) = "deleteUser(user.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+        <button (click) = "detailsUser(user.id)" class="btn btn-warning" style="margin-left: 10px">Details</button>
+      </td>
 
     </tr>
   </tbody>

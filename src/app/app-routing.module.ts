@@ -1,9 +1,9 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { UserCreateComponent } from "./user-create/user-create.component";
-import { UserDetailsComponent } from "./user-details/user-details.component";
-import { UserListComponent } from "./user-list/user-list.component";
-import { UserUpdateComponent } from "./user-update/user-update.component";
+import { UserCreateComponent } from "./user/views/user-create/user-create.component";
+import { UserDetailsComponent } from "./user/views/user-details/user-details.component";
+import { UserListComponent } from "./user/views/user-list/user-list.component";
+import { UserUpdateComponent } from "./user/views/user-update/user-update.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
